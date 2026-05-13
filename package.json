@@ -9,12 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@netlify/functions": "^5.2.1",
     "@supabase/supabase-js": "^2.105.4",
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
+    "qrcode": "^1.5.4",
     "react": "latest",
     "react-dom": "latest",
     "react-router-dom": "latest",
+    "stripe": "^22.1.1",
     "vite": "latest"
   }
 }

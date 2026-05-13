@@ -1,0 +1,9 @@
+Install these dependencies in the Uriyel project:
+
+npm install stripe qrcode @netlify/functions
+
+Existing project should already have:
+- @supabase/supabase-js
+- react
+- react-dom
+- vite
