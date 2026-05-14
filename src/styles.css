@@ -799,3 +799,36 @@ td span {
   padding: 12px 14px;
   font-size: 13px;
 }
+/* Add to src/styles.css if these classes are not already styled */
+
+.qr-image {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 24px;
+  display: block;
+}
+
+.ghost-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.ghost-link:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+tr.selected-row {
+  background: rgba(255,255,255,0.045);
+}
+
+.table-card tbody tr {
+  cursor: pointer;
+}

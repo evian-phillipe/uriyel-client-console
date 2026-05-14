@@ -19,7 +19,7 @@ function mapPassStatus(value, paymentStatus) {
 
 function getOrdersTotal(orders) {
   return orders
-    .filter((order) => ['paid', 'complete', 'completed', 'succeeded'].includes(String(order.status).toLowerCase()))
+    .filter((order) => ['paid', 'complete', 'completed', 'succeeded', 'allocated'].includes(String(order.status).toLowerCase()))
     .reduce((sum, order) => sum + Number(order.amount_gbp || 0), 0);
 }
 
@@ -41,7 +41,11 @@ function buildGuestRows({ guestRows, passRows, orderRows, checkinRows }) {
       sponsor: guest.sponsor_source || '—',
       spend: getOrdersTotal(guestOrders),
       notes: guest.notes || '—',
+      passId: guestPass?.id || '',
       passCode: guestPass?.pass_code || '',
+      passUrl: guestPass?.pass_url || '',
+      qrPayload: guestPass?.qr_payload || '',
+      qrDataUrl: guestPass?.qr_data_url || '',
     };
   });
 }
