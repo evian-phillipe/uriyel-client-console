@@ -1,0 +1,6 @@
+/* Optional: paste near the existing status-banner styles if success banners are not green */
+.status-banner.success {
+  color: #bbf7d0;
+  border-color: rgba(74,222,128,0.22);
+  background: rgba(20,83,45,0.18);
+}

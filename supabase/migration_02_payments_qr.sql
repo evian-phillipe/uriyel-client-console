@@ -1,5 +1,5 @@
 -- Uriyel Client Console v1
--- Migration 02 — Stripe checkout, payment confirmation and QR pass fields
+-- Migration 02 — manual payment confirmation and QR pass fields
 
 alter table public.orders
   add column if not exists stripe_checkout_session_id text,
